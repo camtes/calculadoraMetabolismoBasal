@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    style="@style/FondoFragment">
+
+    <TextView
+        style="@style/TituloCentrado"
+        android:id="@+id/appnameInfo"
+        android:text="@string/tituloInfo" />
+
+    <TextView
+        style="@style/TextoCentrado"
+        android:id="@+id/version"
+        android:text="@string/version" />
+
+    <TextView
+        style="@style/TextoCentrado"
+        android:id="@+id/textDesarrollada"
+        android:text="@string/desarrollada" />
+
+    <TextView
+        style="@style/TextoCentrado"
+        android:id="@+id/textDesarrollador"
+        android:text="@string/desarrollador" />
+
+    <TextView
+        style="@style/TextoCentradoLink"
+        android:id="@+id/urlDesarrollador"
+        android:text="@string/urlDesarrollador"/>
+
+
+</LinearLayout>

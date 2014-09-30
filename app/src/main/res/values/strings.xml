@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">Calculadora met. Basal</string>
+    <string name="titutlo_seccion1">Calculadora</string>
+    <string name="titutlo_seccion2">Información</string>
+    <string name="titutlo_seccion3">Acerca de</string>
+
+    <!-- Cadenas de texto para el fragment calculadora -->
+    <string name="peso">Peso (kilogramos)</string>
+    <string name="altura">Altura (centímetros)</string>
+    <string name="edad">Edad</string>
+    <string name="sexo">Sexo</string>
+    <string name="nivelActivdad">Nivel de actividad</string>
+    <string name="nivelActividad1">Sedentario (poco o ningun ejercicio)</string>
+    <string name="nivelActividad2">Ligera (1-3 días/semana)</string>
+    <string name="nivelActividad3">Moderada (3-5 días/semana)</string>
+    <string name="nivelActividad4">Activa (6-7 días/semana)</string>
+    <string name="nivelActividad5">Muy activa (2 veces al día)</string>
+
+    <string name="resultadosMB">Metablismo basal:</string>
+    <string name="resultadosMantener">Calorías necesarias para manterner el peso:</string>
+    <string name="resultadosAdelgazar">Calorías para adelgazar:</string>
+    <string name="resultadosSubirPeso">Calorías para subir de peso:</string>
+    <string name="resultadosAviso">*Estos datos son orientativos</string>
+
+    <!-- Cadenas de texto para el fragment informacion -->
+    <string name="tituloInfo">Calculadora de Calorías Harris-Benedict</string>
+    <string name="informacion">
+        El método Harris-Benedict te permite descubrir de una forma mucho más precisa el número de
+        calorías que deberías consumir diariamente.\n\n
+
+        Saber cuántas calorías deberías ingerir para manetener tu peso actual, incrementarlo o
+        adelgazar, es fundamental antes de empezar cualquier dieta de adelgazamiento.
+        Aunque existen diferentes métodos para calcular las calorías diarias recomendadas,
+        el método Harris-Benedict utiliza una mayor cantidad de parámetros para calcularlas por
+        lo que es mucho más preciso.
+    </string>
+
+    <!-- Cadenas de texto para el fragment acerca de -->
+    <string name="version">Version 1.0</string>
+    <string name="desarrollada">Aplicación desarrollada por:</string>
+    <string name="desarrollador">ccamposfuentes</string>
+    <string name="urlDesarrollador">https://play.google.com/store/apps/developer?id=ccamposfuentes</string>
+
+    <!-- Colores -->
+    <color name="blanco">#ffffff</color>
+    <color name="negro">#000000</color>
+    <color name="fondo">#e4e4e4</color>
+    <color name="fondoEditText">#e9e9e9</color>
+    <color name="link">#7ebf34</color>
+</resources>
