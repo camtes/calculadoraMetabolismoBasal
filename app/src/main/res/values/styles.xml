@@ -1,86 +1,18 @@
 <resources>
 
     <!-- Base application theme. -->
-    <style name="AppTheme" parent="android:Theme.Holo.Light.DarkActionBar">
+    <style name="AppTheme" parent="Theme.AppCompat.Light.NoActionBar">
         <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorAccent</item>
+        <item name="android:textColor">@android:color/white</item>
     </style>
+    <style name="AppTheme.NoActionBar">
+        <item name="windowActionBar">false</item>
+        <item name="windowNoTitle">true</item>
+    </style>
+    <style name="AppTheme.AppBarOverlay" parent="ThemeOverlay.AppCompat.Dark.ActionBar" />
+    <style name="AppTheme.PopupOverlay" parent="ThemeOverlay.AppCompat.Light" />
 
-    <style name="FondoFragment">
-        <item name="android:layout_width">match_parent</item>
-        <item name="android:layout_height">match_parent</item>
-        <item name="android:orientation">vertical</item>
-        <item name="android:background">@color/fondo</item>
-        <item name="android:textColor">@color/negro</item>
-        <item name="android:layout_marginBottom">10dp</item>
-    </style>
-
-    <style name="TituloCentrado">
-        <item name="android:layout_width">match_parent</item>
-        <item name="android:layout_height">wrap_content</item>
-        <item name="android:layout_gravity">center</item>
-        <item name="android:gravity">center</item>
-        <item name="android:layout_margin">5dp</item>
-        <item name="android:textSize">20sp</item>
-        <item name="android:textStyle">bold</item>
-        <item name="android:textColor">@color/negro</item>
-    </style>
-
-    <style name="TextoCentrado">
-        <item name="android:layout_width">match_parent</item>
-        <item name="android:layout_height">wrap_content</item>
-        <item name="android:layout_gravity">center</item>
-        <item name="android:gravity">center</item>
-        <item name="android:layout_margin">5dp</item>
-        <item name="android:textSize">15sp</item>
-        <item name="android:textColor">@color/negro</item>
-    </style>
-
-    <style name="TextoCentradoLink">
-        <item name="android:layout_width">match_parent</item>
-        <item name="android:layout_height">wrap_content</item>
-        <item name="android:layout_gravity">center</item>
-        <item name="android:gravity">center</item>
-        <item name="android:layout_margin">5dp</item>
-        <item name="android:textSize">15sp</item>
-        <item name="android:textColorLink">@color/link</item>
-        <item name="android:autoLink">web</item>
-    </style>
-
-    <style name="Texto">
-        <item name="android:layout_width">match_parent</item>
-        <item name="android:layout_height">wrap_content</item>
-        <item name="android:layout_margin">10dp</item>
-        <item name="android:textSize">15sp</item>
-        <item name="android:textColor">@color/negro</item>
-    </style>
-
-    <style name="TextoNegrita">
-        <item name="android:layout_width">match_parent</item>
-        <item name="android:layout_height">wrap_content</item>
-        <item name="android:layout_margin">10dp</item>
-        <item name="android:textStyle">bold</item>
-        <item name="android:textSize">15sp</item>
-        <item name="android:textColor">@color/negro</item>
-    </style>
-
-    <style name="editText">
-        <item name="android:layout_width">match_parent</item>
-        <item name="android:layout_height">wrap_content</item>
-        <item name="android:layout_marginLeft">10dp</item>
-        <item name="android:layout_marginRight">10dp</item>
-        <item name="android:ems">30</item>
-        <item name="android:inputType">numberDecimal</item>
-        <item name="android:textColor">@color/negro</item>
-        <item name="android:background">@color/fondoEditText</item>
-    </style>
-
-    <style name="Boton">
-        <item name="android:layout_width">150dp</item>
-        <item name="android:layout_height">50dp</item>
-        <item name="android:layout_gravity">center</item>
-        <item name="android:gravity">center</item>
-        <item name="android:layout_margin">10dp</item>
-        <item name="android:textColor">@color/blanco</item>
-        <item name="android:background">@drawable/buttonshape</item>
-    </style>
 </resources>

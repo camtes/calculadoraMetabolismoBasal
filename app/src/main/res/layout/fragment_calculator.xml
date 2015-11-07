@@ -1,0 +1,282 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorPrimary"
+    tools:context="com.ccamposfuentes.calculadorametabolismobasal.Calculator">
+
+    <RelativeLayout
+        android:id="@+id/calculatorCalc"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        >
+
+        <android.support.design.widget.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/calculatorWeight"
+            android:textColorHint="@android:color/darker_gray"
+            android:layout_marginTop="20dp"
+            android:layout_marginStart="12dp"
+            android:focusableInTouchMode="true"
+            android:layout_marginEnd="16dp">
+
+            <android.support.v7.widget.AppCompatEditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:inputType="numberDecimal"
+                android:textSize="16sp"
+                android:hint="@string/calculatorWeight"
+                android:textColorHint="@android:color/white"
+                android:textColor="@android:color/darker_gray" />
+
+        </android.support.design.widget.TextInputLayout>
+
+        <android.support.design.widget.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/calculatorWeight"
+            android:id="@+id/calculatorHeight"
+            android:textColorHint="@android:color/darker_gray"
+            android:layout_marginTop="10dp"
+            android:layout_marginStart="12dp"
+            android:layout_marginEnd="16dp">
+
+            <android.support.v7.widget.AppCompatEditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:inputType="numberDecimal"
+                android:textSize="16sp"
+                android:hint="@string/calculatorHeight"
+                android:textColorHint="@android:color/darker_gray"
+                android:textColor="@android:color/darker_gray" />
+
+        </android.support.design.widget.TextInputLayout>
+
+        <android.support.design.widget.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/calculatorHeight"
+            android:id="@+id/calculatorYears"
+            android:textColorHint="@android:color/darker_gray"
+            android:layout_marginTop="10dp"
+            android:layout_marginStart="12dp"
+            android:layout_marginEnd="16dp">
+
+            <android.support.v7.widget.AppCompatEditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:inputType="numberDecimal"
+                android:textSize="16sp"
+                android:hint="@string/calculatorYears"
+                android:textColorHint="@android:color/darker_gray"
+                android:textColor="@android:color/darker_gray" />
+
+        </android.support.design.widget.TextInputLayout>
+
+        <TextView
+            android:id="@+id/calculatorLabelSex"
+            android:layout_below="@id/calculatorYears"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="12sp"
+            android:paddingTop="16dp"
+            android:paddingLeft="16dp"
+            android:text="@string/calculatorSex"
+            android:textColor="@color/colorAccent" />
+
+        <Spinner
+            android:id="@+id/calculatorSpinnerSex"
+            android:layout_below="@id/calculatorLabelSex"
+            android:layout_width="match_parent"
+            android:layout_marginRight="16dp"
+            android:layout_marginLeft="16dp"
+            android:layout_height="wrap_content"
+            />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_below="@id/calculatorSpinnerSex"
+            android:background="@android:color/black"
+            android:alpha="0.4"
+            android:layout_marginLeft="16dp"
+            android:layout_marginRight="16dp"
+            android:layout_marginTop="-10dp" />
+
+        <TextView
+            android:id="@+id/calculatorLabelActivity"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/calculatorSpinnerSex"
+            android:textSize="12sp"
+            android:paddingTop="10dp"
+            android:paddingLeft="16dp"
+            android:text="@string/calculatorActivity"
+            android:textColor="@color/colorAccent"/>
+
+        <Spinner
+            android:id="@+id/calculatorSpinnerActivity"
+            android:layout_width="match_parent"
+            android:layout_below="@id/calculatorLabelActivity"
+            android:layout_marginRight="16dp"
+            android:layout_marginLeft="16dp"
+            android:layout_height="wrap_content" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_below="@id/calculatorSpinnerActivity"
+            android:background="@android:color/black"
+            android:alpha="0.4"
+            android:layout_marginRight="16dp"
+            android:layout_marginLeft="16dp"
+            android:layout_marginTop="-10dp" />
+
+        <Button
+            android:id="@+id/calculatorSubmit"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:layout_gravity="bottom"
+            android:textStyle="bold"
+            android:padding="16dp"
+            android:layout_alignParentBottom="true"
+            android:background="@color/colorAccent"
+            android:textColor="@color/colorPrimary"
+            android:textSize="18sp"
+            android:text="CALCULAR  METABOLISMO"/>
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/calculatorResult"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:paddingLeft="16dp"
+        android:paddingRight="16dp"
+        android:paddingTop="16dp"
+        android:visibility="gone">
+
+        <ImageButton
+            android:id="@+id/resultClose"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/ic_action_ic_close_white_24dp"
+            android:background="@android:color/transparent"/>
+
+        <ImageButton
+            android:id="@+id/resultSave"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:src="@drawable/ic_action_ic_save_white_24dp"
+            android:background="@android:color/transparent"/>
+
+        <TextView
+            android:id="@+id/resultMBS"
+            android:layout_below="@id/resultSave"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingTop="30dp"
+            android:text="@string/calculatorResultMBS"
+            android:textSize="16dp"/>
+
+        <TextView
+            android:id="@+id/resultGenerateMBS"
+            android:layout_below="@id/resultSave"
+            android:layout_toRightOf="@id/resultMBS"
+            android:layout_toEndOf="@id/resultMBS"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="right"
+            android:layout_alignParentRight="true"
+            android:paddingTop="30dp"
+            android:textColor="@android:color/darker_gray"/>
+
+        <View
+            android:id="@+id/resultSeparator"
+            android:layout_below="@id/resultMBS"
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_marginTop="16dp"
+            android:background="@android:color/darker_gray"
+            android:alpha="0.3"
+            />
+
+        <TextView
+            android:id="@+id/resultCaloriesTitle"
+            android:layout_below="@id/resultSeparator"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingTop="18dp"
+            android:text="@string/calculatorResultCaloriesTitle"
+            android:gravity="center"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            />
+
+        <TextView
+            android:id="@+id/resultCalories"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/resultCaloriesTitle"
+            android:paddingTop="16dp"
+            android:text="@string/calculatorResultCalories"
+            android:textSize="16sp"
+            />
+
+        <TextView
+            android:id="@+id/resultCaloriesGenerated"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/resultCalories"
+            android:paddingTop="8dp"
+            android:textColor="@android:color/darker_gray"/>
+
+        <TextView
+            android:id="@+id/resultCaloriesLostWeight"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/resultCaloriesGenerated"
+            android:paddingTop="16dp"
+            android:text="@string/calculatorResultLostCalories"
+            android:textSize="16sp"
+            />
+
+        <TextView
+            android:id="@+id/resultCaloriesLostWeightGenerated"
+            android:layout_below="@id/resultCaloriesLostWeight"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingTop="8dp"
+            android:textColor="@android:color/darker_gray"/>
+
+        <TextView
+            android:id="@+id/resultCaloriesGainWeight"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/resultCaloriesLostWeightGenerated"
+            android:paddingTop="16dp"
+            android:text="@string/calculatorResultGainCalories"
+            android:textSize="16sp"
+            />
+
+        <TextView
+            android:id="@+id/resultCaloriesGainWeightGenerated"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/resultCaloriesGainWeight"
+            android:paddingTop="8dp"
+            android:textColor="@android:color/darker_gray"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:gravity="bottom"
+            android:paddingBottom="16dp"
+            android:text="@string/calculatorResultAdvise"/>
+
+    </RelativeLayout>
+
+</FrameLayout>

@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="calculatorSex">
+        <item>Masculino</item>
+        <item>Femenino</item>
+    </string-array>
+
+    <string-array name="calculatorActivity">
+        <item>Sedentario (Poco o ningun ejercicio)</item>
+        <item>Ligera (1-3 días en semana)</item>
+        <item>Moderada (3-5 días en semana)</item>
+        <item>Activa (6-7 días en semana)</item>
+        <item>Muy activa (2 veces al día)</item>
+    </string-array>
+</resources>
